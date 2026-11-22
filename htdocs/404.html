@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>ページが見つかりません | Motivnavi OS</title>
+    <meta
+      name="description"
+      content="お探しのページは見つかりませんでした。"
+    />
+    <meta name="theme-color" content="#15191d" />
+    <meta name="color-scheme" content="dark" />
+
+    <meta name="robots" content="noindex" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32.png"
+    />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Motivnavi OS" />
+
+    <link
+      rel="preload"
+      as="image"
+      href="/images/wallpaper/wallpaper.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Motivnavi OS トップページへ">
+        <img src="/icons/favicon-64.png" alt="" width="28" height="28" />
+        <span>Motivnavi OS</span>
+      </a>
+      <nav class="topnav" aria-label="ページ内メニュー">
+        <div class="topnav-links" id="topnavLinks">
+          <a href="/#about">About</a>
+          <a href="/#gallery">写真</a>
+          <a href="/#screenshots">画面</a>
+          <a href="/#features">機能一覧</a>
+          <a href="/#specs">動作環境</a>
+          <a href="/#repos">リポジトリ</a>
+          <a href="/#author">製作者</a>
+        </div>
+        <button
+          id="menuBtn"
+          class="menu-btn"
+          type="button"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="topnavLinks"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path class="menu-icon-open" d="M4 7h16M4 12h16M4 17h16" />
+            <path class="menu-icon-close" d="M6 6l12 12M18 6 6 18" />
+          </svg>
+        </button>
+        <a
+          class="download-btn"
+          href="/download/"
+          aria-label="ダウンロード"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16" />
+          </svg>
+          <span class="download-label">ダウンロード</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="page-hero error-hero" aria-labelledby="error-title">
+        <div class="hero-inner">
+          <p class="eyebrow">Error</p>
+          <p class="error-code" aria-hidden="true">404</p>
+          <h1 id="error-title">ページが見つかりません</h1>
+          <p class="hero-lead">
+            お探しのページは移動または削除されたか、URLが間違っている可能性があります。
+          </p>
+          <div class="hero-actions">
+            <a class="hero-cta hero-cta--primary" href="/">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 11.5 12 4l9 7.5" />
+                <path d="M5.5 9.5V20h13V9.5" />
+              </svg>
+              トップページへ
+            </a>
+            <a class="hero-cta" href="/download/">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16" />
+              </svg>
+              ダウンロード
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img src="/icons/favicon-64.png" alt="" width="24" height="24" />
+        <p>Motivnavi OS &copy; <span id="year">2026</span> エノキ電気</p>
+      </div>
+    </footer>
+
+    <script src="/js/app.js" defer></script>
+  </body>
+</html>

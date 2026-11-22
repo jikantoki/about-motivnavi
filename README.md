@@ -110,9 +110,10 @@ docker compose up -d --build
 ├── Dockerfile               # httpd:2.4-alpine ベース
 ├── docker-compose.yml       # 13080 → 80 にポート割り当て
 ├── apache/
-│   └── motivnavi.conf       # MIMEタイプ・圧縮・キャッシュ制御
+│   └── motivnavi.conf       # MIMEタイプ・圧縮・キャッシュ制御・404ページ指定
 └── htdocs/
     ├── index.html           # トップページ
+    ├── 404.html             # 404ページ（存在しないURLを開いた時に表示）
     ├── download/
     │   └── index.html       # ダウンロードページ（/download/）
     ├── manifest.webmanifest # PWA マニフェスト
