@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>About Motivnavi OS</title>
+  <meta name="description" content="Motivnavi OSは、家に眠らせている中古の2 in 1タブレットをカーナビとして生まれ変わらせるプロジェクトです。">
+  <meta name="theme-color" content="#15191d">
+  <meta name="color-scheme" content="dark">
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Motivnavi OS">
+
+  <link rel="preload" as="image" href="/images/wallpaper.webp" type="image/webp">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Motivnavi OS トップへ">
+      <img src="/icons/favicon-64.png" alt="" width="28" height="28">
+      <span>Motivnavi OS</span>
+    </a>
+    <nav class="topnav">
+      <a href="#about">About</a>
+      <a href="#gallery">写真</a>
+      <a href="#features">機能一覧</a>
+      <a href="#author">製作者</a>
+      <button id="installBtn" class="install-btn" type="button" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+        アプリをインストール
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ヒーロー -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <p class="eyebrow">About</p>
+        <h1 id="hero-title">Motivnavi OS</h1>
+        <p class="hero-lead">眠っている2 in 1タブレットを、<br class="br-sp">カーナビに。</p>
+        <a class="hero-cta" href="#about">
+          詳しく見る
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- 概要 -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title"><span class="en">About</span>Motivnavi OSについて</h2>
+        <div class="about-body">
+          <img class="about-logo" src="/icons/icon-192.png" alt="Motivnavi OS ロゴ" width="120" height="120">
+          <div>
+            <p>Motivnavi OSは、家に眠らせている中古の2 in 1タブレットをカーナビとして生まれ変わらせるべく発足したプロジェクトです。</p>
+            <p>日本人のエンジニアである<strong>エノキ電気</strong>によって作成されました。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 取り付けイメージ -->
+    <section id="gallery" class="section gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="section-title"><span class="en">Gallery</span>取り付けイメージ</h2>
+        <div class="gallery-grid">
+          <figure class="shot">
+            <a class="shot-link" href="/images/photos/android-auto.jpg" data-full="/images/photos/android-auto.webp">
+              <picture>
+                <source type="image/webp" srcset="/images/photos/android-auto-800.webp 800w, /images/photos/android-auto.webp 1600w" sizes="(max-width: 820px) 100vw, 560px">
+                <img src="/images/photos/android-auto-800.jpg" srcset="/images/photos/android-auto-800.jpg 800w, /images/photos/android-auto.jpg 1600w" sizes="(max-width: 820px) 100vw, 560px" width="1600" height="1200" loading="lazy" decoding="async" alt="車のダッシュボードに取り付けたタブレットで、Android AutoのGoogleマップと音楽プレイヤーを表示している様子">
+              </picture>
+            </a>
+            <figcaption>Linux AutoでAndroid Autoを表示。Googleマップでのナビと音楽再生を同時に。</figcaption>
+          </figure>
+          <figure class="shot">
+            <a class="shot-link" href="/images/photos/mediablue.jpg" data-full="/images/photos/mediablue.webp">
+              <picture>
+                <source type="image/webp" srcset="/images/photos/mediablue-800.webp 800w, /images/photos/mediablue.webp 1600w" sizes="(max-width: 820px) 100vw, 560px">
+                <img src="/images/photos/mediablue-800.jpg" srcset="/images/photos/mediablue-800.jpg 800w, /images/photos/mediablue.jpg 1600w" sizes="(max-width: 820px) 100vw, 560px" width="1600" height="1200" loading="lazy" decoding="async" alt="夜の車内で、タブレットにMediablueの再生画面（曲名・アーティスト・再生ボタン）を表示している様子">
+              </picture>
+            </a>
+            <figcaption>Mediablueで、Bluetooth接続したスマホの再生中の楽曲情報を表示。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 機能一覧 -->
+    <section id="features" class="section features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title" class="section-title"><span class="en">Features</span>機能一覧</h2>
+
+        <ul class="feature-grid">
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 11v2"/><path d="M11.5 8.5 8.5 12h4l-3 3.5"/></svg>
+            </div>
+            <h3>充電中の画面点灯キープ</h3>
+            <p>カーナビとして長時間画面を表示できるよう、充電中は画面を常に点灯させます。</p>
+            <p>また、充電がされていない間はすぐに画面が暗くなり、最短でスリープに入ります。</p>
+            <p class="note">製作者は自分で充電していない時のスリープを5秒に変えて、さらに使いやすくしました。</p>
+          </li>
+
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/><path d="M3 3l18 18"/></svg>
+            </div>
+            <h3>スリープ自動復帰の阻止 <span class="badge">ベータ</span></h3>
+            <p>2 in 1タブレットでありがちな、外部入力割り込みによるスリープの自動復帰を阻止してあります。</p>
+            <p>USBや画面タッチなどは無効化していますが、電源ボタン及び充電開始ではスリープから復帰します。</p>
+          </li>
+
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 17h14v-4.5l-2-5.5H7l-2 5.5V17z"/><path d="M5 12.5h14"/><circle cx="8" cy="15" r=".6"/><circle cx="16" cy="15" r=".6"/><path d="M6.5 17v2M17.5 17v2"/></svg>
+            </div>
+            <h3>Android Autoに対応</h3>
+            <p>プリインストールされている<strong>Linux Auto</strong>を使う事で、USB接続およびWi-FiテザリングでAndroid Autoを使用できます。</p>
+            <p class="note">ご利用にはGoogle SDKのインストールが必要です。Linux Auto初回起動時にインストーラが立ち上がります。</p>
+          </li>
+
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg>
+            </div>
+            <h3>日本語のタッチスクリーンキーボード標準搭載</h3>
+            <p>Linuxでは比較的導入が面倒な、日本語入力に対応したタッチスクリーンキーボードを標準搭載しています。</p>
+            <p>もちろん変換や従来のキーボード入力、英語での入力にも対応しています。</p>
+          </li>
+
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 7l10 10-5 5V2l5 5L7 17"/></svg>
+            </div>
+            <h3>Bluetoothで接続した端末からの楽曲再生に対応</h3>
+            <p>スマホなどとBluetoothでテザリングすることで、スマホの音声をMotivnavi OSで再生することができます。もちろん通話にも対応しています。</p>
+            <p>また、プリインストールされている<strong>Mediablue</strong>を使う事で再生中の楽曲情報を表示できます。</p>
+          </li>
+
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="13" rx="2"/><path d="M6 8l11-5"/><circle cx="8" cy="14.5" r="3"/><path d="M15 12h4M15 15h4M15 18h4"/></svg>
+            </div>
+            <h3>インターネットラジオプレイヤー同梱</h3>
+            <p>AzuraCast規格に対応したインターネットラジオプレイヤー<strong>「Castify」</strong>を同梱しています。</p>
+            <p>対応のお好きなインターネットラジオを聞ける他、エノキ電気が提供するオススメラジオ放送を視聴することができます。</p>
+          </li>
+
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 13h4M6 10h2"/></svg>
+            </div>
+            <h3>KDEデスクトップを採用</h3>
+            <p>メモリ4GB、eMMCの2 in 1タブレットでの動作を想定し、タッチスクリーンの相性と軽量さを天秤にかけて<strong>KDE Plasma</strong>デスクトップ環境を採用しました。</p>
+          </li>
+
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </div>
+            <h3>アイコンの巨大化とウィンドウの自動最大化</h3>
+            <p>Motivnavi OSは車に取り付けて使用することを想定しております。</p>
+            <p>運転しながらのタッチ操作にストレスのかからないよう、アイコンは大きめに設定され、ウィンドウはデフォルトで最大化された状態で表示されます。</p>
+          </li>
+
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>
+            </div>
+            <h3>欲しいアプリは何でもご自由に</h3>
+            <p>Motivnavi OSは標準的なLinuxからの派生OSのため、<strong>debファイル</strong>や<strong>aptコマンド</strong>を利用したアプリのインストールに対応しております。</p>
+            <p>また、専門的な知識があればご自身で理想のアプリを作ることも可能です。</p>
+          </li>
+
+          <li class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18.5h2"/><path d="M9 6l1 1.5M15 6l-1 1.5"/><path d="M8.5 11a3.5 3.5 0 0 1 7 0z"/></svg>
+            </div>
+            <h3>Waydroidを入れればAndroidアプリも動く</h3>
+            <p>本環境に別途<strong>Waydroid</strong>をインストールして頂くことで、Androidアプリの動作も可能です。</p>
+            <p class="note">最初から入っていない理由は、配布用isoファイルの軽量化及びAtom等の最小限のスペックの端末に不要な負荷をかけさせないためです。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 製作者情報 -->
+    <section id="author" class="section author" aria-labelledby="author-title">
+      <div class="container">
+        <h2 id="author-title" class="section-title"><span class="en">Author</span>製作者情報</h2>
+        <div class="author-card">
+          <div class="author-profile">
+            <img class="author-avatar" src="/icons/enoki-192.png" alt="エノキ電気 (ENOKI ELECTRONICS) のロゴ" width="96" height="96" loading="lazy">
+            <div class="author-head">
+              <p class="author-label">製作者</p>
+              <p class="author-name">エノキ電気</p>
+              <p class="author-msg">何かあればお気軽にご連絡ください。</p>
+            </div>
+          </div>
+          <ul class="author-links">
+            <li>
+              <a href="https://enoki.xyz" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+                <span><small>Webサイト</small>enoki.xyz</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/jikantoki" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h4.5L20 20h-4.5z"/><path d="M19.5 4l-6.3 7M10.8 13L4.5 20"/></svg>
+                <span><small>X（Twitter）</small>@jikantoki</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 写真の拡大表示 -->
+  <dialog id="lightbox" class="lightbox" aria-label="写真の拡大表示">
+    <button type="button" class="lightbox-close" aria-label="閉じる">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <img alt="">
+  </dialog>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="/icons/favicon-64.png" alt="" width="24" height="24">
+      <p>Motivnavi OS &copy; <span id="year">2026</span> エノキ電気</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js" defer></script>
+</body>
+</html>

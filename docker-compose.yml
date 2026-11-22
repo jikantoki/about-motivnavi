@@ -1,0 +1,8 @@
+services:
+  motivnavi-about:
+    build: .
+    image: motivnavi-about:latest
+    container_name: motivnavi-about
+    ports:
+      - "13080:80"
+    restart: unless-stopped

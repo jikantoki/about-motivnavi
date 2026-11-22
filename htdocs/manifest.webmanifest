@@ -1,0 +1,19 @@
+{
+  "name": "About Motivnavi OS",
+  "short_name": "Motivnavi OS",
+  "description": "中古の2 in 1タブレットをカーナビとして生まれ変わらせるプロジェクト「Motivnavi OS」の紹介ページ",
+  "lang": "ja",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#15191d",
+  "theme_color": "#15191d",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
