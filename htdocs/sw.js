@@ -1,16 +1,21 @@
 // Motivnavi OS - About : Service Worker
 // 内容を更新したら CACHE_VERSION を上げると、古いキャッシュが削除されます
-const CACHE_VERSION = 'v3';
+const CACHE_VERSION = 'v15';
 const CACHE_NAME = `motivnavi-about-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
   '/',
   '/index.html',
+  '/download/',
   '/css/style.css',
   '/js/app.js',
   '/manifest.webmanifest',
-  '/images/wallpaper.webp',
-  '/images/wallpaper.jpg',
+  '/images/wallpaper/wallpaper.webp',
+  '/images/wallpaper/wallpaper.jpg',
+  '/images/wallpaper/android-auto.webp',
+  '/images/wallpaper/android-auto.jpg',
+  '/images/wallpaper/mediablue.webp',
+  '/images/wallpaper/mediablue.jpg',
   '/icons/favicon.ico',
   '/icons/favicon-32.png',
   '/icons/favicon-64.png',
@@ -25,6 +30,12 @@ const PRECACHE_URLS = [
   '/images/photos/android-auto-800.jpg',
   '/images/photos/mediablue-800.webp',
   '/images/photos/mediablue-800.jpg',
+  '/images/screenshots/aa-map-music-800.webp',
+  '/images/screenshots/aa-map-music-800.jpg',
+  '/images/screenshots/desktop-launcher-keyboard-800.webp',
+  '/images/screenshots/desktop-launcher-keyboard-800.jpg',
+  '/images/screenshots/desktop-home-800.webp',
+  '/images/screenshots/desktop-home-800.jpg',
 ];
 
 self.addEventListener('install', (event) => {
@@ -57,11 +68,15 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       fetch(req)
         .then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE_NAME).then((c) => c.put('/index.html', copy));
+          // ページごとに保存（/download/ などがトップを上書きしないように）
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE_NAME).then((c) => c.put(req, copy));
+          }
           return res;
         })
-        .catch(() => caches.match('/index.html'))
+        .catch(() => caches.match(req, { ignoreSearch: true })
+          .then((cached) => cached || caches.match('/index.html')))
     );
     return;
   }
