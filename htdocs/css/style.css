@@ -405,6 +405,102 @@ strong { color: #fff; font-weight: 700; }
   line-height: 1.7;
 }
 
+/* 設置方法 */
+.install-title {
+  margin: 56px 0 20px;
+  font-size: clamp(20px, 2.4vw, 24px);
+  line-height: 1.4;
+}
+
+.install-steps {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: install;
+}
+
+.install-step {
+  counter-increment: install;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-solid);
+  transition: border-color .25s, box-shadow .25s;
+}
+.install-step:hover { border-color: var(--border-strong); box-shadow: var(--glow); }
+
+.install-icon {
+  position: relative;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(90, 169, 255, 0.12);
+  border: 1px solid var(--border-strong);
+  color: var(--accent-2);
+}
+.install-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* 番号バッジ */
+.install-icon::before {
+  content: counter(install);
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent-2);
+  color: var(--bg-deep);
+  font-family: var(--font-en);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.install-body h4 {
+  margin: 0 0 4px;
+  font-size: 19px;
+  line-height: 1.5;
+}
+.install-body p {
+  margin: 0;
+  color: #c9d2de;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* 注意項目 */
+.install-step--warn {
+  border-color: rgba(255, 184, 77, 0.45);
+  background:
+    linear-gradient(90deg, rgba(255, 184, 77, 0.08), transparent 45%),
+    var(--surface-solid);
+}
+.install-step--warn:hover { border-color: rgba(255, 184, 77, 0.7); box-shadow: 0 0 24px rgba(255, 184, 77, 0.25); }
+.install-step--warn .install-icon {
+  background: rgba(255, 184, 77, 0.12);
+  border-color: rgba(255, 184, 77, 0.5);
+  color: #ffc46b;
+}
+.install-step--warn .install-icon::before { background: #ffb84d; }
+
 /* ===== スクリーンショット ===== */
 .screenshots { padding-top: 24px; }
 
@@ -938,6 +1034,11 @@ strong { color: #fff; font-weight: 700; }
   .author-card { padding: 28px 22px; }
   .author-avatar { width: 72px; height: 72px; border-radius: 16px; }
   .lightbox { padding: 12px; }
+  .install-step { gap: 18px; padding: 20px 18px; align-items: flex-start; }
+  .install-icon { width: 52px; height: 52px; }
+  .install-icon svg { width: 26px; height: 26px; }
+  .install-body h4 { font-size: 18px; }
+  .install-body p { font-size: 15px; }
   .author-links { width: 100%; grid-template-columns: 1fr; }
 }
 
