@@ -78,8 +78,15 @@ SIMスロットやGPSセンサーを搭載していると、さらに便利で�
 | [Linux Auto](https://github.com/jikantoki/LinuxAuto) | LinuxでAndroid Autoを実行するためのGUI |
 | [Mediablue](https://github.com/jikantoki/mediablue) | LinuxでBluetooth接続先のメディア再生情報を表示させるGUI |
 | [Motivnavi Plymouth](https://github.com/jikantoki/motivnavi-plymouth) | Motivnavi OSの起動画面 |
+| [Motivnavi Updater](https://github.com/jikantoki/motivnavi-updater) | Motivnavi OSの独自アプリをアップデートするアップデーター |
 | [Fcitx5 Osk](https://github.com/fortime/fcitx5-osk)（外部プロジェクト） | KDE Plasma環境で日本語タッチキーボードを使うためのプログラム |
 | [About Motivnavi OS](https://github.com/jikantoki/about-motivnavi) | このWebサイト |
+
+## 関連プロジェクト
+
+| 名前 | 製作者 | 説明 |
+| --- | --- | --- |
+| [Caramel OS](https://caramelos.xyz) | エノキ電気 | 美味しくて可愛いOS |
 
 ## 製作者
 

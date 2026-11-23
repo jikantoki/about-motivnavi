@@ -1,6 +1,6 @@
 // Motivnavi OS - About : Service Worker
 // 内容を更新したら CACHE_VERSION を上げると、古いキャッシュが削除されます
-const CACHE_VERSION = 'v17';
+const CACHE_VERSION = 'v18';
 const CACHE_NAME = `motivnavi-about-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
@@ -36,6 +36,8 @@ const PRECACHE_URLS = [
   '/images/screenshots/desktop-launcher-keyboard-800.jpg',
   '/images/screenshots/desktop-home-800.webp',
   '/images/screenshots/desktop-home-800.jpg',
+  '/images/projects/caramel-os-800.webp',
+  '/images/projects/caramel-os-800.jpg',
 ];
 
 self.addEventListener('install', (event) => {
