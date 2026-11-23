@@ -16,17 +16,17 @@ Motivnavi OSは、家に眠らせている中古の2 in 1タブレットをカ�
 
 ## 取り付けイメージ
 
-| Android Auto | Mediablue |
-| --- | --- |
+| Android Auto                                                                                                                                           | Mediablue                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
 | ![車のダッシュボードに取り付けたタブレットで、Android AutoのGoogleマップと音楽プレイヤーを表示している様子](htdocs/images/photos/android-auto-800.jpg) | ![夜の車内で、タブレットにMediablueの再生画面を表示している様子](htdocs/images/photos/mediablue-800.jpg) |
-| Linux AutoでAndroid Autoを表示。Googleマップでのナビと音楽再生を同時に。 | Mediablueで、Bluetooth接続したスマホの再生中の楽曲情報を表示。 |
+| Linux AutoでAndroid Autoを表示。Googleマップでのナビと音楽再生を同時に。                                                                               | Mediablueで、Bluetooth接続したスマホの再生中の楽曲情報を表示。                                           |
 
 ## スクリーンショット
 
-| Android Auto | アプリメニュー | ホーム画面 |
-| --- | --- | --- |
+| Android Auto                                                          | アプリメニュー                                                                                       | ホーム画面                                                    |
+| --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | ![Android Autoの画面](htdocs/images/screenshots/aa-map-music-800.jpg) | ![アプリメニューとスクリーンキーボード](htdocs/images/screenshots/desktop-launcher-keyboard-800.jpg) | ![ホーム画面](htdocs/images/screenshots/desktop-home-800.jpg) |
-| 音楽の再生とGoogleマップのナビを1画面で同時に表示。 | タッチだけでアプリの起動や文字入力ができます。 | 大きな時計と、よく使うアプリを並べて表示。 |
+| 音楽の再生とGoogleマップのナビを1画面で同時に表示。                   | タッチだけでアプリの起動や文字入力ができます。                                                       | 大きな時計と、よく使うアプリを並べて表示。                    |
 
 ## 主な機能
 
@@ -57,12 +57,12 @@ Motivnavi OSは、家に眠らせている中古の2 in 1タブレットをカ�
 
 ## 動作環境
 
-|  | 推奨動作環境 | 最低動作環境 |
-| --- | --- | --- |
-| 検証端末 | Lenovo ThinkPad Helix Ultrabook (2015) | Fujitsu Q506 |
-| CPU | Intel Core M-5Y71 1.2GHz 2コア4スレッド | Atom x5-Z8500 1.4GHz 4コア4スレッド |
-| メモリ | 4GB以上（ブラウザやWaydroidを多用する場合は8GB以上） | 4GB以上 |
-| ストレージ | SSD 64GB以上 | eMMC 64GB以上 |
+|            | 推奨動作環境                                         | 最低動作環境                        |
+| ---------- | ---------------------------------------------------- | ----------------------------------- |
+| 検証端末   | Lenovo ThinkPad Helix Ultrabook (2015)               | Fujitsu Q506                        |
+| CPU        | Intel Core M-5Y71 1.2GHz 2コア4スレッド              | Atom x5-Z8500 1.4GHz 4コア4スレッド |
+| メモリ     | 4GB以上（ブラウザやWaydroidを多用する場合は8GB以上） | 本当に起動するだけなら2GB           |
+| ストレージ | SSD 64GB以上                                         | eMMC 64GB以上                       |
 
 ### その他必須要件
 
@@ -76,22 +76,22 @@ SIMスロットやGPSセンサーを搭載していると、さらに便利で�
 
 ## 関連リポジトリ
 
-| 名前 | 説明 |
-| --- | --- |
-| [Castify](https://github.com/jikantoki/castify) | インターネットラジオ視聴クライアント |
-| [Linux Auto](https://github.com/jikantoki/LinuxAuto) | LinuxでAndroid Autoを実行するためのGUI |
-| [Mediablue](https://github.com/jikantoki/mediablue) | LinuxでBluetooth接続先のメディア再生情報を表示させるGUI |
-| [Motivnavi Plymouth](https://github.com/jikantoki/motivnavi-plymouth) | Motivnavi OSの起動画面 |
-| [Welcome to Motivnavi](https://github.com/jikantoki/motivnavi-welcome) | Motivnavi OSの全てがわかるスタートアプリ |
-| [Motivnavi Updater](https://github.com/jikantoki/motivnavi-updater) | Motivnavi OSの独自アプリをワンクリックで最新化できるアップデーター |
-| [Motivnavi Screentweaks](https://github.com/jikantoki/motivnavi-screentweaks) | カーナビ向けに画面設定をカスタマイズできるアプリ |
-| [Fcitx5 Osk](https://github.com/fortime/fcitx5-osk)（外部プロジェクト） | KDE Plasma環境で日本語タッチキーボードを使うためのプログラム |
-| [About Motivnavi OS](https://github.com/jikantoki/about-motivnavi) | このWebサイト |
+| 名前                                                                          | 説明                                                               |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [Castify](https://github.com/jikantoki/castify)                               | インターネットラジオ視聴クライアント                               |
+| [Linux Auto](https://github.com/jikantoki/LinuxAuto)                          | LinuxでAndroid Autoを実行するためのGUI                             |
+| [Mediablue](https://github.com/jikantoki/mediablue)                           | LinuxでBluetooth接続先のメディア再生情報を表示させるGUI            |
+| [Motivnavi Plymouth](https://github.com/jikantoki/motivnavi-plymouth)         | Motivnavi OSの起動画面                                             |
+| [Welcome to Motivnavi](https://github.com/jikantoki/motivnavi-welcome)        | Motivnavi OSの全てがわかるスタートアプリ                           |
+| [Motivnavi Updater](https://github.com/jikantoki/motivnavi-updater)           | Motivnavi OSの独自アプリをワンクリックで最新化できるアップデーター |
+| [Motivnavi Screentweaks](https://github.com/jikantoki/motivnavi-screentweaks) | カーナビ向けに画面設定をカスタマイズできるアプリ                   |
+| [Fcitx5 Osk](https://github.com/fortime/fcitx5-osk)（外部プロジェクト）       | KDE Plasma環境で日本語タッチキーボードを使うためのプログラム       |
+| [About Motivnavi OS](https://github.com/jikantoki/about-motivnavi)            | このWebサイト                                                      |
 
 ## 関連プロジェクト
 
-| 名前 | 製作者 | 説明 |
-| --- | --- | --- |
+| 名前                                | 製作者     | 説明               |
+| ----------------------------------- | ---------- | ------------------ |
 | [Caramel OS](https://caramelos.xyz) | エノキ電気 | 美味しくて可愛いOS |
 
 ## 製作者
