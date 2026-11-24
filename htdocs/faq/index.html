@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>よくある質問 | Motivnavi OS</title>
+    <meta
+      name="description"
+      content="Motivnavi OSのよくある質問（FAQ）です。対応端末やAndroid Autoの接続方法などをまとめています。"
+    />
+    <meta name="theme-color" content="#15191d" />
+    <meta name="color-scheme" content="dark" />
+
+    <link rel="canonical" href="https://motivnavi.enoki.xyz/faq/" />
+
+    <!-- OGP -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Motivnavi OSへようこそ" />
+    <meta property="og:title" content="よくある質問 | Motivnavi OS" />
+    <meta
+      property="og:description"
+      content="Motivnavi OSのよくある質問（FAQ）です。対応端末やAndroid Autoの接続方法などをまとめています。"
+    />
+    <meta property="og:url" content="https://motivnavi.enoki.xyz/faq/" />
+    <meta
+      property="og:image"
+      content="https://motivnavi.enoki.xyz/images/ogp.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Motivnavi OS" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jikantoki" />
+    <meta name="twitter:title" content="よくある質問 | Motivnavi OS" />
+    <meta
+      name="twitter:description"
+      content="Motivnavi OSのよくある質問（FAQ）です。対応端末やAndroid Autoの接続方法などをまとめています。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://motivnavi.enoki.xyz/images/ogp.jpg"
+    />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32.png"
+    />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Motivnavi OS" />
+
+    <link
+      rel="preload"
+      as="image"
+      href="/images/wallpaper/wallpaper.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Armのタブレット（Surface Goなど）では動きますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Armは現時点では対応していません。64ビット対応のx86 CPUを搭載したパソコンが必要です。ただ、Armで動くLinux OSをご自身でインストールして頂き、Linux AutoやMediablue等の各種カーナビ向けアプリをGitHubからダウンロードしてご利用いただくことは可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "メモリ2GBの端末でも動きますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "起動するだけであれば一応動きます。ただ、絶対に快適ではないです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Androidアプリは動きますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Motivnavi OS単体ではAndroidアプリを動かす機能はありませんが、別途Waydroidをインストールして頂くことでAndroidアプリも利用できるようになります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apple CarPlayには対応していますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "現時点ではApple CarPlayには対応しておらず、Android Autoのみの対応となっています。これは製作者の環境にApple端末がなく、動作確認が取れないからです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Android Autoの接続方法を教えてください",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Linux Autoを開き、初回起動であればワンクリックインストールを実行します。 2. Android Autoを実行できるAndroid端末を用意し、Android Auto設定を開きます。 3. Android Autoアプリのバージョン情報を連打し、開発者モードに入ります。 4. Android Autoアプリの右上のメニューを開き、ヘッドユニットサーバーを起動します。 5. Android端末側でWi-Fiテザリングを開始し、Motivnavi OS端末を接続します。 6. Linux Autoの接続開始を押します。 また、USBで利用する場合はヘッドユニットサーバーの起動やWi-Fiテザリングの必要はございません。"
+      }
+    }
+  ]
+}
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Motivnavi OS トップページへ">
+        <img src="/icons/favicon-64.png" alt="" width="28" height="28" />
+        <span>Motivnavi OS</span>
+      </a>
+      <nav class="topnav" aria-label="ページ内メニュー">
+        <div class="topnav-links" id="topnavLinks">
+          <a href="/#about">About</a>
+          <a href="/#gallery">写真</a>
+          <a href="/#screenshots">画面</a>
+          <a href="/#features">機能一覧</a>
+          <a href="/#specs">動作環境</a>
+          <a href="/#issues">既知の不具合</a>
+          <a href="/faq/" aria-current="page">FAQ</a>
+          <a href="/#repos">リポジトリ</a>
+          <a href="/#projects">関連プロジェクト</a>
+          <a href="/#author">製作者</a>
+        </div>
+        <button
+          id="menuBtn"
+          class="menu-btn"
+          type="button"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="topnavLinks"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path class="menu-icon-open" d="M4 7h16M4 12h16M4 17h16" />
+            <path class="menu-icon-close" d="M6 6l12 12M18 6 6 18" />
+          </svg>
+        </button>
+        <a
+          class="download-btn"
+          href="/download/"
+          aria-label="ダウンロード"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16" />
+          </svg>
+          <span class="download-label">ダウンロード</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="container">
+          <p class="eyebrow">FAQ</p>
+          <h1 id="page-title"><span class="en">FAQ</span> <span>よくある質問</span></h1>
+          <p class="hero-lead">Motivnavi OSについて、よくいただく質問をまとめました。</p>
+        </div>
+      </section>
+
+      <section class="section faq" aria-label="よくある質問">
+        <div class="container">
+          <details class="faq-item" id="q1">
+            <summary><span class="faq-q" aria-hidden="true">Q</span>Armのタブレット（Surface Goなど）では動きますか？</summary>
+            <div class="faq-a">
+              <p>Armは現時点では対応していません。64ビット対応のx86 CPUを搭載したパソコンが必要です。</p>
+              <p>ただ、Armで動くLinux OSをご自身でインストールして頂き、Linux AutoやMediablue等の各種カーナビ向けアプリをGitHubからダウンロードしてご利用いただくことは可能です。</p>
+            </div>
+          </details>
+          <details class="faq-item" id="q2">
+            <summary><span class="faq-q" aria-hidden="true">Q</span>メモリ2GBの端末でも動きますか？</summary>
+            <div class="faq-a">
+              <p>起動するだけであれば一応動きます。ただ、絶対に快適ではないです。</p>
+            </div>
+          </details>
+          <details class="faq-item" id="q3">
+            <summary><span class="faq-q" aria-hidden="true">Q</span>Androidアプリは動きますか？</summary>
+            <div class="faq-a">
+              <p>Motivnavi OS単体ではAndroidアプリを動かす機能はありませんが、別途Waydroidをインストールして頂くことでAndroidアプリも利用できるようになります。</p>
+            </div>
+          </details>
+          <details class="faq-item" id="q4">
+            <summary><span class="faq-q" aria-hidden="true">Q</span>Apple CarPlayには対応していますか？</summary>
+            <div class="faq-a">
+              <p>現時点ではApple CarPlayには対応しておらず、Android Autoのみの対応となっています。これは製作者の環境にApple端末がなく、動作確認が取れないからです。</p>
+            </div>
+          </details>
+          <details class="faq-item" id="q5">
+            <summary><span class="faq-q" aria-hidden="true">Q</span>Android Autoの接続方法を教えてください</summary>
+            <div class="faq-a">
+              <ol class="dl-steps">
+                <li>Linux Autoを開き、初回起動であればワンクリックインストールを実行します。</li>
+                <li>Android Autoを実行できるAndroid端末を用意し、Android Auto設定を開きます。</li>
+                <li>Android Autoアプリのバージョン情報を連打し、開発者モードに入ります。</li>
+                <li>Android Autoアプリの右上のメニューを開き、ヘッドユニットサーバーを起動します。</li>
+                <li>Android端末側でWi-Fiテザリングを開始し、Motivnavi OS端末を接続します。</li>
+                <li>Linux Autoの接続開始を押します。</li>
+              </ol>
+              <p class="spec-remark">また、USBで利用する場合はヘッドユニットサーバーの起動やWi-Fiテザリングの必要はございません。</p>
+            </div>
+          </details>
+
+          <div class="spec-card faq-contact">
+            <h3>解決しない場合は</h3>
+            <p>ここにない質問や不具合などがあれば、製作者までお気軽にご連絡ください。</p>
+            <a class="card-link" href="/#author">製作者情報を見る <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img src="/icons/favicon-64.png" alt="" width="24" height="24" />
+        <p>Motivnavi OS &copy; <span id="year">2026</span> エノキ電気</p>
+      </div>
+    </footer>
+
+    <script src="/js/app.js" defer></script>
+  </body>
+</html>

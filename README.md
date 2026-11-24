@@ -129,6 +129,8 @@ docker compose up -d --build
     ├── 404.html             # 404ページ（存在しないURLを開いた時に表示）
     ├── download/
     │   └── index.html       # ダウンロードページ（/download/）
+    ├── faq/
+    │   └── index.html       # よくある質問ページ（/faq/）
     ├── manifest.webmanifest # PWA マニフェスト
     ├── sw.js                # Service Worker（オフライン対応）
     ├── css/style.css

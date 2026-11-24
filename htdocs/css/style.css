@@ -963,6 +963,68 @@ strong { color: #fff; font-weight: 700; }
 .dl-steps li { margin-bottom: 6px; }
 .dl-steps li::marker { color: var(--accent); font-weight: 700; }
 
+/* ===== FAQページ ===== */
+.faq { padding-top: 8px; }
+.faq .container { max-width: 880px; }
+.faq-item {
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+.faq-item[open] { border-color: var(--border-strong); }
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 52px 18px 22px;
+  position: relative;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform .2s;
+}
+.faq-item[open] summary::after { transform: translateY(-30%) rotate(-135deg); }
+.faq-item summary:hover { background: rgba(90, 169, 255, 0.06); }
+.faq-q {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(90, 169, 255, 0.2);
+  color: var(--accent-2);
+  font-family: var(--font-en);
+  font-size: 16px;
+}
+.faq-a { padding: 0 24px 20px 68px; color: #c9d2de; }
+.faq-a p { margin: 0 0 10px; }
+.faq-a p:last-child { margin-bottom: 0; }
+.faq-a .dl-steps { margin-bottom: 12px; }
+.faq-contact { margin-top: 28px; }
+.faq-contact p { margin: 0; color: #c9d2de; }
+@media (max-width: 600px) {
+  .faq-item summary { padding: 16px 44px 16px 16px; font-size: 16px; }
+  .faq-item summary::after { right: 18px; }
+  .faq-a { padding: 0 16px 18px 16px; }
+}
+
 /* ===== 404ページ ===== */
 .error-hero {
   display: flex;
