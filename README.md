@@ -102,6 +102,14 @@ SIMスロットやGPSセンサーを搭載していると、さらに便利で�
 - X（Twitter）：[@jikantoki](https://twitter.com/jikantoki)
 - GitHub：[jikantoki](https://github.com/jikantoki)
 
+### 制作協力者
+
+| 名前                                          | 担当                               |
+| --------------------------------------------- | ---------------------------------- |
+| [マキマキ](https://makimaki.co.uk)            | 試供品提供、ネットワークエンジニア |
+| [ねるる](https://architectural-n.net)         | グラフィカルデザイナー             |
+| Mania the Gamer                               | ベータテスター                     |
+
 ---
 
 ## このWebサイトについて（開発者向け）
@@ -131,6 +139,8 @@ docker compose up -d --build
     │   └── index.html       # ダウンロードページ（/download/）
     ├── faq/
     │   └── index.html       # よくある質問ページ（/faq/）
+    ├── about/
+    │   └── index.html       # 製作者情報ページ（/about/）
     ├── manifest.webmanifest # PWA マニフェスト
     ├── sw.js                # Service Worker（オフライン対応）
     ├── css/style.css
