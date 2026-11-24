@@ -1,6 +1,6 @@
 // Motivnavi OS - About : Service Worker
 // 内容を更新したら CACHE_VERSION を上げると、古いキャッシュが削除されます
-const CACHE_VERSION = 'v26';
+const CACHE_VERSION = 'v27';
 const CACHE_NAME = `motivnavi-about-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [

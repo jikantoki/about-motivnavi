@@ -930,6 +930,16 @@ strong { color: #fff; font-weight: 700; }
 }
 .dl-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .dl-sub { margin: 0; color: var(--muted); font-size: 13px; }
+.dl-btn--mirror {
+  min-width: 220px;
+  margin-top: 8px;
+  padding: 11px 22px;
+  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 15px;
+}
+.dl-btn--mirror:hover { background: rgba(90, 169, 255, 0.14); }
+.dl-btn--mirror svg { width: 18px; height: 18px; }
 
 .dl-versions {
   margin-top: 20px;
