@@ -23,10 +23,20 @@ Motivnavi OSは、家に眠らせている中古の2 in 1タブレットをカ�
 
 ## スクリーンショット
 
-| Android Auto                                                          | アプリメニュー                                                                                       | ホーム画面                                                    |
-| --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| ![Android Autoの画面](htdocs/images/screenshots/aa-map-music-800.jpg) | ![アプリメニューとスクリーンキーボード](htdocs/images/screenshots/desktop-launcher-keyboard-800.jpg) | ![ホーム画面](htdocs/images/screenshots/desktop-home-800.jpg) |
-| 音楽の再生とGoogleマップのナビを1画面で同時に表示。                   | タッチだけでアプリの起動や文字入力ができます。                                                       | 大きな時計と、よく使うアプリを並べて表示。                    |
+| Android Auto | ホーム画面 | アプリメニュー |
+| --- | --- | --- |
+| ![Android Autoの画面](htdocs/images/screenshots/aa-map-music-800.jpg) | ![ホーム画面](htdocs/images/screenshots/desktop-home-800.jpg) | ![アプリメニューとスクリーンキーボード](htdocs/images/screenshots/desktop-launcher-keyboard-800.jpg) |
+| 音楽の再生とGoogleマップのナビを1画面で同時に表示。 | 大きな時計と日付、よく使うアプリを並べて表示。 | タッチだけでアプリの起動や文字入力ができます。 |
+
+| Motivnavi OSへようこそ | Linux Auto |
+| --- | --- |
+| ![Motivnavi OSへようこそ](htdocs/images/screenshots/welcome-800.jpg) | ![Linux Auto](htdocs/images/screenshots/linux-auto-800.jpg) |
+| 各機能をワンタップで起動。 | USB・Wi-Fiを選んで、ワンクリックでAndroid Autoに接続。 |
+
+| Castify | スクリーン設定 |
+| --- | --- |
+| ![Castify](htdocs/images/screenshots/castify-800.jpg) | ![スクリーン設定](htdocs/images/screenshots/screen-tweaks-800.jpg) |
+| インターネットラジオを聴きながらドライブ。 | カーナビモードにすると、エンジンを切ると自動でスリープ。 |
 
 ## 主な機能
 
