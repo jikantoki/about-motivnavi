@@ -701,13 +701,6 @@ strong { color: #fff; font-weight: 700; }
 }
 .spec-card--plus h3 { color: var(--accent-2); }
 
-/* ===== 既知の不具合 ===== */
-.issues { padding-top: 24px; }
-.issue-card li::marker { color: #ffb454; }
-.issue-card li strong { color: var(--text); }
-.issue-card li + li { margin-top: 14px; }
-.issue-card .spec-remark { margin-top: 10px; border-left-color: #ffb454; background: rgba(255, 180, 84, 0.07); }
-
 /* ===== リポジトリ一覧 ===== */
 .repos { padding-top: 24px; }
 
@@ -1016,6 +1009,72 @@ strong { color: #fff; font-weight: 700; }
 @media (max-width: 900px) {
   .contrib-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== ダウンロードページ：既知の不具合・バージョン履歴 ===== */
+.dl-block { margin-top: 48px; scroll-margin-top: calc(var(--topbar-h) + 16px); }
+.dl-block-title { margin: 0 0 20px; font-size: 24px; }
+.dl-block-title .en {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.issue-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.issue {
+  --issue-color: #ffb454;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--issue-color);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.issue--fixed { --issue-color: #7cd65a; }
+.issue--wontfix { --issue-color: #8a94a6; }
+.issue-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.issue-head strong { font-size: 17px; line-height: 1.5; }
+.issue--fixed .issue-head strong { color: var(--muted); text-decoration: line-through; text-decoration-color: rgba(255, 255, 255, 0.35); }
+.issue-status {
+  padding: 2px 12px;
+  border: 1px solid var(--issue-color);
+  border-radius: 999px;
+  color: var(--issue-color);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.issue-body { margin-top: 8px; color: #c9d2de; }
+.issue-body p { margin: 0 0 6px; }
+.issue-body p:last-child { margin-bottom: 0; }
+
+.dl-history { scroll-margin-top: calc(var(--topbar-h) + 16px); }
+.history-list { margin: 0; padding: 0; list-style: none; }
+.history-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+.history-list li:first-child { border-top: 0; padding-top: 0; }
+.history-info p { margin: 0; }
+.history-ver { font-family: var(--font-en); font-weight: 700; font-size: 17px; }
+.history-note { color: var(--muted); font-size: 14px; }
+.history-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.history-links a {
+  padding: 8px 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  color: var(--accent-2);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.history-links a:hover { background: rgba(90, 169, 255, 0.14); }
 
 /* ===== FAQページ ===== */
 .faq { padding-top: 8px; }
