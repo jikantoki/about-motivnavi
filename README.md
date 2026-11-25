@@ -85,7 +85,7 @@ SIMスロットやGPSセンサーを搭載していると、さらに便利で�
 | [Welcome to Motivnavi](https://github.com/jikantoki/motivnavi-welcome)        | Motivnavi OSの全てがわかるスタートアプリ                           |
 | [Motivnavi Updater](https://github.com/jikantoki/motivnavi-updater)           | Motivnavi OSの独自アプリをワンクリックで最新化できるアップデーター |
 | [Motivnavi Screentweaks](https://github.com/jikantoki/motivnavi-screentweaks) | カーナビ向けに画面設定をカスタマイズできるアプリ                   |
-| [Fcitx5 Osk](https://github.com/fortime/fcitx5-osk)（外部プロジェクト）       | KDE Plasma環境で日本語タッチキーボードを使うためのプログラム       |
+| [Fcitx5 Osk Ja](https://github.com/jikantoki/fcitx5-osk-ja)                   | KDE Plasma環境で日本語タッチキーボードを使うためのプログラム       |
 | [About Motivnavi OS](https://github.com/jikantoki/about-motivnavi)            | このWebサイト                                                      |
 
 ## 関連プロジェクト
@@ -104,11 +104,11 @@ SIMスロットやGPSセンサーを搭載していると、さらに便利で�
 
 ### 制作協力者
 
-| 名前                                          | 担当                               |
-| --------------------------------------------- | ---------------------------------- |
-| [マキマキ](https://makimaki.co.uk)            | 試供品提供、ネットワークエンジニア |
-| [ねるる](https://architectural-n.net)         | グラフィカルデザイナー             |
-| Mania the Gamer                               | ベータテスター                     |
+| 名前                                  | 担当                               |
+| ------------------------------------- | ---------------------------------- |
+| [マキマキ](https://makimaki.co.uk)    | 試供品提供、ネットワークエンジニア |
+| [ねるる](https://architectural-n.net) | グラフィカルデザイナー             |
+| Mania the Gamer                       | ベータテスター                     |
 
 ---
 
