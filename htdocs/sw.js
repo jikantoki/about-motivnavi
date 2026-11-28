@@ -1,6 +1,6 @@
 // Motivnavi OS - About : Service Worker
 // 内容を更新したら CACHE_VERSION を上げると、古いキャッシュが削除されます
-const CACHE_VERSION = 'v37';
+const CACHE_VERSION = 'v39';
 const CACHE_NAME = `motivnavi-about-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
@@ -9,6 +9,7 @@ const PRECACHE_URLS = [
   '/download/',
   '/faq/',
   '/about/',
+  '/install/',
   '/css/style.css',
   '/js/app.js',
   '/manifest.webmanifest',
@@ -32,6 +33,8 @@ const PRECACHE_URLS = [
   '/images/photos/android-auto-800.jpg',
   '/images/photos/mediablue-800.webp',
   '/images/photos/mediablue-800.jpg',
+  '/images/photos/mount-800.webp',
+  '/images/photos/mount-800.jpg',
   '/images/screenshots/aa-map-music-800.webp',
   '/images/screenshots/aa-map-music-800.jpg',
   '/images/screenshots/desktop-launcher-keyboard-800.webp',

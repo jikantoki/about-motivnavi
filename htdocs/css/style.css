@@ -374,7 +374,7 @@ strong { color: #fff; font-weight: 700; }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -1081,6 +1081,81 @@ strong { color: #fff; font-weight: 700; }
   text-decoration: none;
 }
 .history-links a:hover { background: rgba(90, 169, 255, 0.14); }
+
+/* ===== ダウンロード→インストール方法への導線 ===== */
+.dl-install-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 18px 28px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: rgba(90, 169, 255, 0.1);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .2s, box-shadow .2s;
+}
+.dl-install-link:hover { background: rgba(90, 169, 255, 0.18); box-shadow: var(--glow); }
+.dl-install-link small { display: block; color: var(--muted); font-size: 13px; font-weight: 400; }
+.dl-install-link > span:last-child { color: var(--accent-2); font-size: 22px; }
+
+/* ===== インストール方法ページ ===== */
+.howto { padding-top: 8px; }
+.howto .container { max-width: 880px; }
+.howto-need h2 { margin: 0 0 12px; font-size: 18px; }
+.howto-need a { color: var(--accent-2); }
+.howto-phase { margin: 48px 0 18px; font-size: 22px; }
+.howto-phase .en {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.howto-steps { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.howto-step {
+  counter-increment: howto;
+  position: relative;
+  padding: 20px 24px 20px 84px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: #c9d2de;
+}
+.howto-step::before {
+  content: counter(howto);
+  position: absolute;
+  left: 22px;
+  top: 18px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(90, 169, 255, 0.2);
+  border: 1px solid var(--border-strong);
+  color: var(--accent-2);
+  font-family: var(--font-en);
+  font-size: 18px;
+  font-weight: 700;
+}
+.howto-step h3 { margin: 6px 0 8px; color: var(--text); font-size: 18px; }
+.howto-step p { margin: 0 0 8px; }
+.howto-step p:last-child { margin-bottom: 0; }
+.howto-step a { color: var(--accent-2); }
+.howto-step .ext { display: inline-block; width: 14px; height: 14px; margin-left: 3px; vertical-align: -1px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.howto-step .spec-remark { margin-top: 10px; }
+.howto-links { margin-top: 48px; }
+@media (max-width: 600px) {
+  .howto-step { padding: 18px 18px 18px 70px; }
+  .howto-step::before { left: 16px; width: 38px; height: 38px; font-size: 16px; }
+}
 
 /* ===== FAQページ ===== */
 .faq { padding-top: 8px; }
